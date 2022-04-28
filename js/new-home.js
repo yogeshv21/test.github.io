@@ -72,3 +72,20 @@ $('#catogries-wraper').slick({
     ]
   });
           
+// ============================ Responsive Menu ============================//
+
+var menuPannel = document.querySelector('.links');
+var menuBtn = document.querySelector('.menu');
+var closeBtn = document.querySelector('.close');
+
+menuBtn.addEventListener('click', function(){
+  menuPannel.style.right = '0'
+  console.log('open');
+})
+ 
+closeBtn.addEventListener('click', function(){
+  menuPannel.style.right = '-100%'
+  console.log('closed');
+})
+
+
