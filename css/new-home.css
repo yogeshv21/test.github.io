@@ -558,6 +558,10 @@ button {
       font-weight: 400;
   }
 
+  .nav_bar .links li a:hover{
+      color: #01838D;
+  }
+
   .nav_bar .links .catogry-box{
       display: initial;
       width: 58%;
@@ -569,13 +573,13 @@ button {
       margin-top: 7vw;
   }
 
-  .nav_bar .links .catogry p{
-      font-size: 4.5vw;
-      color: black;
+  .nav_bar .links .catogry p:hover{
+      color: #01838D;
   }
 
   .nav_bar .links .underline{
       height: 1vw;
+      display: none;
   }
 
   .nav_bar .links .close{
