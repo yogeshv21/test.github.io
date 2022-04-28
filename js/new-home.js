@@ -76,15 +76,15 @@ $('#catogries-wraper').slick({
 
 var menuPannel = document.querySelector('.links');
 var menuBtn = document.querySelector('.menu');
-var closeBtn = document.querySelector('.close');
+var closeBtn = document.querySelector('.close-icon');
 
 menuBtn.addEventListener('click', function(){
-  menuPannel.style.right = '0'
+  menuPannel.style.left = '0'
   console.log('open');
 })
  
 closeBtn.addEventListener('click', function(){
-  menuPannel.style.right = '-100%'
+  menuPannel.style.left = '-100%'
   console.log('closed');
 })
 
