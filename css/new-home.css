@@ -519,8 +519,12 @@ button {
       height: 10.1vw;
       font-size: 4.5vw;
       width: 66vw;
-      padding: 0 4vw;
+      padding: 0 5vw;
       border-radius: 1vw;
+  }
+
+  .nav_bar .search-cont .search::placeholder{
+      font-size: 4vw;
   }
 
   .nav_bar .search-cont .search-btn{
