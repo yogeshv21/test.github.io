@@ -1,0 +1,647 @@
+/* ===================== Font Faces ================== */
+
+@font-face {
+    font-family: cabin-ragular;
+    src: url(../fonts/Cabin-Regular.ttf);
+}
+
+@font-face {
+    font-family: cabin-medium;
+    src: url(../fonts/Cabin-Medium.ttf);
+}
+
+@font-face {
+    font-family: cabin-medium;
+    src: url(../fonts/Cabin-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: raleway-ragular;
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: raleway-medium;
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: raleway-bold;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+/* ================================= Css Boilerplate =======================  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cabin-ragular;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #F5F5F5;
+    border-top: .5px solid #F5F5F5;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .5vw;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #01838D;
+    border-radius: 100px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* =========================== Nav-Bar Css Start ====================== */
+
+.nav_bar {
+    position: fixed;
+    top: 0;
+    padding: 0 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5vw;
+    box-shadow: 0 .1vw 1vw rgba(0, 0, 0, 0.127);
+    background-color: #F5F5F5;
+    z-index: 99;
+}
+
+.nav_bar .logo img {
+    width: 9vw;
+    margin-top: .5vw;
+}
+
+.nav_bar .search-cont{
+    display: flex;
+    align-items: center;
+    margin-left: 7vw;
+}
+
+.nav_bar .search-cont .search{
+    height: 2.1vw;
+    width: 20vw;
+    padding: 0 1.5vw;
+    border-radius: .2vw;
+    border: none;
+    outline: none;
+    font-size: 1vw;
+    box-shadow: .05vw .05vw .5vw rgba(0, 0, 0, 0.113);
+}
+
+.nav_bar .search-cont .search::placeholder{
+    color: rgba(0, 0, 0, 0.307);
+}
+
+.nav_bar .search-cont .search-btn {
+    width: 6vw;
+    margin-left: .5vw;
+    height: 2vw;
+    border: none;
+    background-color: #01838D;
+    color: white;
+    font-size: 1vw;
+    letter-spacing: .08vw;
+    border-radius: .2vw;
+}
+
+.nav_bar .links {
+    display: flex;
+    align-items: center;
+}
+
+.nav_bar .links li {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    margin-left: 3vw;
+}
+
+.nav_bar .links li:hover .underline {
+    width: 100%;
+}
+
+.nav_bar .links a {
+    font-size: 1.2vw;
+    font-family: raleway-medium;
+    text-decoration: none;
+    color: black;
+    margin: 0 .4vw;
+    font-weight: 500;
+}
+
+.nav_bar .links .underline {
+    height: .2vw;
+    border-radius: 10vw;
+    width: 0;
+    margin-top: .1vw;
+    background-color: #01838D;
+    transition: all .3s;
+}
+
+.nav_bar .catogries_cont {
+    position: absolute;
+    height: 30vw;
+    top: 100%;
+    right: 0;
+    background-color: blanchedalmond;
+}
+
+.nav_bar .links .deopdown {
+    height: 30vw;
+    width: 20vw;
+    background-color: aqua;
+}
+
+
+/* ////////////////////////////////// Home Page Css Start ///////////////////////////////// */
+
+
+/* =================================== Landing Page ================================== */
+#landing {
+    background-color: blue;
+}
+
+#landing_sec #banner {
+    position: relative;
+    height: 30vw;
+    margin-top: 5vw;
+    width: 100%;
+    background-image: url(../images/Group\ 217.png);
+    background-size: cover;
+
+}
+
+#banner #txt-wraper {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translate(0, -50%);
+}
+
+#banner #txt-wraper #main-heading {
+    font-size: 4.5vw;
+    line-height: 5vw;
+    color: #01838D;
+    letter-spacing: .3vw;
+}
+
+#banner #txt-wraper #inp-cont {
+    margin-top: 2vw;
+}
+
+#banner #txt-wraper #inp-cont #search {
+    width: 23vw;
+    height: 2.4vw;
+    border-radius: .2vw;
+    border: none;
+    background-color: #F5F5F5;
+    padding: 0 2vw;
+    outline: none;
+    color: rgba(0, 0, 0, 0.706);
+    font-weight: 500;
+    letter-spacing: .05vw;
+    box-shadow: inset .1vw .2vw .5vw rgba(0, 0, 0, 0.154);
+}
+
+#banner #txt-wraper #inp-cont #search-btn {
+    width: 8vw;
+    margin-left: .5vw;
+    height: 2.4vw;
+    border: none;
+    background-color: #01838D;
+    color: white;
+    font-size: 1.3vw;
+    letter-spacing: .08vw;
+    border-radius: .2vw;
+}
+
+#txt-wraper #inp-cont #search::placeholder {
+    letter-spacing: .09vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.342);
+    font-size: 1.1vw;
+}
+
+#banner #arrow {
+    position: absolute;
+    bottom: -1.5vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BF2915;
+    z-index: 9;
+    border-radius: 100%;
+    height: 3vw;
+    width: 3vw;
+}
+
+#banner #arrow img{
+    height: 2vw;
+}
+
+#landing_sec #catogries-wraper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 6vw;
+    width: 100%;
+    padding: 0 8vw;
+    background-color: black;
+    cursor: pointer;
+}
+
+#landing_sec #catogries-wraper .catgories-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#catogries-wraper .catgories-card p {
+    color: white;
+    font-size: 1.5vw;
+    margin-left: 1vw;
+}
+
+#catogries-wraper .catgories-card img {
+    height: 1.5vw;
+}
+
+#catogries-wraper .controle-btn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+}
+
+.controle-btn img {
+    height: 1.5vw;
+}
+
+#catogries-wraper .slick-next {
+    right: 4vw;
+}
+
+#catogries-wraper .slick-prev {
+    left: 4vw;
+}
+
+/* ===================Popular Brand Section ====================== */
+
+.sliders {
+    width: 100%;
+    padding: 3vw 7.5vw;
+}
+
+.sliders .top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sliders .top button {
+    padding: .6vw 2vw;
+    border-radius: .5vw;
+    font-size: 1.3vw;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    transition: all .5s;
+}
+
+.sliders .top button:hover {
+    box-shadow: .3vw .3vw .3vw rgba(0, 0, 0, 0.372);
+}
+
+.sliders .top h2 {
+    font-size: 2vw;
+    letter-spacing: .18vw;
+}
+
+.sliders .card-cont {
+    width: 100%;
+    margin-top: 3vw;
+}
+
+.sliders .card-cont .card {
+    /* height: 25vw; */
+    background-color: white;
+    box-shadow: .1vw .1vw .6vw rgba(0, 0, 0, 0.161);
+    width: 18.5vw !important;
+    border-radius: 1vw;
+    padding: .9vw;
+    margin: 1vw 1.2vw;
+    transition: all .5s;
+}
+
+.sliders .card-cont .card:hover{
+    transform: scale(1.03);
+}
+
+.sliders .card-cont .card .img-cont {
+    position: relative;
+    overflow: hidden;
+    height: 11vw;
+    background-color: white;
+    border-radius: 1vw;
+    box-shadow: inset .08vw .08vw .5vw rgba(0, 0, 0, 0.157);
+}
+
+.card-cont .card .img-cont img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14vw;
+}
+
+.card-cont .card p {
+    color: #01838D;
+    text-align: center;
+    margin-top: .6vw;
+    font-size: 1.7vw;
+    letter-spacing: .15vw;
+    font-weight: 600;
+}
+
+.card-cont .card .top-brands {
+    width: 100%;
+    padding: 0 .7vw;
+    margin-top: 1.5vw;
+}
+
+.card-cont .card .brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vw;
+    cursor: pointer;
+}
+
+
+.card-cont .card .brands .brand-logo {
+    width: 5vw;
+}
+
+.card-cont .card .brands button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 100%;
+    padding: .5vw .7vw;
+    background-color: #01838D;
+}
+
+.card-cont .card .brands button img {
+    height: .8vw;
+}
+
+.card-cont .controle-btn-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    z-index: 9;
+    border-radius: 100%;
+    padding: .2vw .2vw;
+    border: none;
+    box-shadow: .1vw .1vw .5vw rgba(0, 0, 0, 0.122);
+}
+
+.card-cont .controle-btn-slider img{
+    width: 2vw;
+    opacity: .7;
+}
+
+.card-cont .slick-prev {
+    left: -4.5vw;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.card-cont .slick-next {
+    right: -3.8vw;
+    top: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/* ===================Popular Brand Section ====================== */
+
+.card-cont .brand-card{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-cont .brand-card .brand-img-cont{
+    display: flex;
+    height: 6vw !important;
+    padding: .5vw;
+}
+
+.card-cont .brand-card .brand-img-cont img{
+    width: 7vw;
+}
+
+.card-cont .brand-card .brand-img-cont .vs{
+    width: 1.5vw;
+}
+
+.card-cont .brand-card button{
+    border-radius: 100px;
+    border: none;
+    background-color: #01838D;
+    color: white;
+    padding: .5vw 1.8vw;
+    font-size: 1vw;
+    letter-spacing: .08vw;
+    margin-top: 1vw;
+}
+
+/* //////////////////////////// Home Page Responsive Starts ///////////////////  */
+
+
+@media(max-width: 600px){
+  .nav_bar{
+      display: initial;
+      height: initial;
+      padding: 3vw 7vw;
+  }
+
+  .nav_bar .logo img{
+      width: 24vw;
+  }
+
+  .nav_bar .search-cont{
+      margin-left: initial;
+      margin-top: 3vw;
+  }
+
+  .nav_bar .search-cont .search{
+      height: 8.1vw;
+      font-size: 3vw;
+      width: 66vw;
+      padding: 0 3vw;
+      border-radius: 1vw;
+  }
+
+  .nav_bar .search-cont .search-btn{
+      width: 19vw;
+      margin-left: 1.5vw;
+      height: 8vw;
+      font-size: 3vw;
+      border-radius: 1vw;
+  }
+
+  .nav_bar .links{
+      display: none;
+  }
+
+  #landing_sec #banner{
+      margin-top: 26vw;
+      height: 114vw;
+      background-image: url(../images/Group\ 247.png);
+  }
+
+  #banner #arrow{
+      height: 7vw;
+      width: 7vw;
+      bottom: -3.5vw;
+  }
+
+  #banner #arrow img{
+      height: 4vw;
+  }
+
+  #landing_sec #catogries-wraper{
+      height: 16vw;
+      padding: 0 8vw 0 10vw;
+  }
+
+  .controle-btn img{
+      height: 4vw;
+  }
+
+  #catogries-wraper .catgories-card p{
+      font-size: 3.5vw;
+  }
+
+  #catogries-wraper .catgories-card img{
+      height: 3.2vw;
+  }
+
+  #banner #txt-wraper{
+      top: 17%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  #banner #txt-wraper #main-heading{
+      font-size: 7.3vw;
+      line-height: 7.5vw;
+  }
+
+  #banner #txt-wraper #inp-cont{
+      display: none;
+  }
+
+  .sliders{
+      padding: 5vw 7vw;
+  }
+
+  .sliders .top h2{
+      width: 70%;
+      font-size: 4vw;
+  }
+
+  .sliders .top button{
+      font-size: 3vw;
+      padding: 1vw 2vw;
+      border-radius: 1vw;
+  }
+
+  .sliders .card-cont .card{
+      width: 38.5vw !important;
+      margin: 1vw 2.2vw;
+      padding: 2vw;
+      border-radius: 2.5vw;
+  }
+
+  .sliders .card-cont .card .img-cont{
+      height: 21vw;
+      border-radius: 2.5vw;
+
+  }
+
+  .card-cont .card .img-cont img{
+      width: 31vw;
+  }
+
+  .card-cont .card p{
+      font-size: 3.7vw;
+      margin-top: 2.2vw;
+  }
+
+  .card-cont .card .top-brands{
+      margin-top: 2.5vw;
+  }
+
+  .card-cont .card .brands{
+      margin-top: 4vw;
+  }
+
+  .card-cont .card .brands .brand-logo{
+      width: 12vw;
+  }
+
+  .card-cont .card .brands button{
+      padding: 1vw 1.5vw;
+  }
+
+  .card-cont .card .brands button img{
+    height: 2.5vw;
+  }
+
+  .card-cont .controle-btn-slider img{
+      width: 5vw;
+  }
+
+  .card-cont .slick-next{
+      right: -4.2vw;
+  }
+
+  .card-cont .brand-card .brand-img-cont{
+      height: 13vw !important;
+  }
+
+  .card-cont .brand-card .brand-img-cont img{
+      width: 15vw;
+  }
+
+  .card-cont .brand-card .brand-img-cont .vs{
+      width: 3.5vw;
+  }
+
+  .card-cont .brand-card button{
+      font-size: 2.8vw;
+      padding: 1vw 2.8vw;
+      margin-top: 2vw;
+  }
+}
