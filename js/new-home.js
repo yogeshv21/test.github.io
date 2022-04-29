@@ -71,7 +71,18 @@ $('#catogries-wraper').slick({
       // instead of a settings object
     ]
   });
-          
+
+
+// ============================Enable and Diseble Body Scroll===============//
+function disableScroll() {
+  document.querySelector("body").style.overflow = "hidden"
+}
+
+function enableScroll() {
+document.querySelector("body").style.overflow = "initial"
+}
+
+
 // ============================ Responsive Menu ============================//
 
 var menuPannel = document.querySelector('.links');
@@ -81,11 +92,13 @@ var closeBtn = document.querySelector('.close-icon');
 menuBtn.addEventListener('click', function(){
   menuPannel.style.left = '0'
   console.log('open');
+  disableScroll()
 })
  
 closeBtn.addEventListener('click', function(){
   menuPannel.style.left = '-100%'
   console.log('closed');
+  enableScroll()
 })
 
 
