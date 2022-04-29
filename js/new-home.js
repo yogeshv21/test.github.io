@@ -88,25 +88,23 @@ document.querySelector("body").style.overflow = "initial"
 var menuPannel = document.querySelector('.links');
 var menuBtn = document.querySelector('.menu');
 var closeBtn = document.querySelector('.close-icon');
+var overlay = document.querySelector('.overlay');
 
 menuBtn.addEventListener('click', function(){
   menuPannel.style.left = '0'
   console.log('open');
+  overlay.style.display = 'initial'
   disableScroll()
 })
  
 closeBtn.addEventListener('click', function(){
   menuPannel.style.left = '-100%'
   console.log('closed');
+  overlay.style.display = 'none'
   enableScroll()
 })
 
 // =====================Catergory dropdown ========================//
-
-// .addEventListener('mouseover', function(){
-//    dropdown()
-//    console.log('***');
-// })
 
 function opendropdown(){
   document.querySelector('.category-box').style.display = 'initial';
