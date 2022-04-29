@@ -158,6 +158,10 @@ button {
     transition: all .3s;
 }
 
+.nav_bar .links .category-drop{
+    position: relative;
+}
+
 .nav_bar .catogries_cont {
     position: absolute;
     height: 30vw;
@@ -166,9 +170,59 @@ button {
     background-color: blanchedalmond;
 }
 
+.nav_bar .bridg{
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 8vw;
+}
 
-.nav_bar .links .catogry-box{
+.nav_bar .links .category-box{
     display: none;
+    background-color: white;
+    position: absolute;
+    top: 230%;
+    right: -50%;
+    width: 15vw;
+    height: 20vw;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+
+.links .category-box .cont{
+    overflow: auto;
+    height: calc(100% - 2.78vw);
+}
+
+.links .category-box .cont::-webkit-scrollbar{
+    width: .2vw;
+    background-color: white;
+    border-radius: 0 .5vw .5vw 0;
+}
+
+.links .category-box .cont::-webkit-scrollbar-thumb{
+    background-color: #01838D;
+    border-radius: 10vw;
+}
+
+.nav_bar .links .category-box .top{
+    width: 100%;
+    height: 1vw;
+    background-color: #01838D;
+    margin-bottom: .5vw;
+}
+
+.links .category-box .category{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: .5vw 1vw;
+   font-size: 1.1vw;
+   cursor: pointer;
+}
+
+.links .category-box .category:hover{
+    background-color: #F5F5F5;
 }
 
 
@@ -562,18 +616,36 @@ button {
       color: #01838D;
   }
 
-  .nav_bar .links .catogry-box{
+  .nav_bar .links  .category-box{
+      background-color: initial;
+      position: initial;
+      width: 60%;
+      margin-top: 3vw;
       display: initial;
-      width: 58%;
   }
 
-  .nav_bar .links .catogry{
-      display: flex;
-      justify-content: space-between;
-      margin-top: 7vw;
+  .nav_bar .links .category-drop{
+      height: 100vw;
   }
 
-  .nav_bar .links .catogry p:hover{
+  .links .category-box .cont{
+      margin-top: 4vw;
+  }
+
+  .links .category-box .cont::-webkit-scrollbar{
+      display: none;
+  }
+
+  .links .category-box .category{
+      font-size: 4.5vw;
+      padding: 2.5vw .8vw;
+  }
+
+  .nav_bar .links .category-box .top{
+      display: none;
+  }
+
+  .nav_bar .links .category p:hover{
       color: #01838D;
   }
 

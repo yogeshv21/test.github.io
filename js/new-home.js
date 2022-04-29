@@ -101,4 +101,19 @@ closeBtn.addEventListener('click', function(){
   enableScroll()
 })
 
+// =====================Catergory dropdown ========================//
 
+// .addEventListener('mouseover', function(){
+//    dropdown()
+//    console.log('***');
+// })
+
+function opendropdown(){
+  document.querySelector('.category-box').style.display = 'initial';
+  document.querySelector(".bridg").style.height = '20vw'
+}
+
+function closedropdown(){
+  document.querySelector('.category-box').style.display = 'none';
+  document.querySelector(".bridg").style.height = 'initial'
+}
