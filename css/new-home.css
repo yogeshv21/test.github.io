@@ -308,6 +308,7 @@ button {
     border-radius: 100%;
     height: 3vw;
     width: 3vw;
+    cursor: pointer; 
 }
 
 #banner #arrow img{
@@ -536,6 +537,112 @@ button {
     margin-top: 1vw;
 }
 
+/* ============================== Footer Css ======================= */
+
+.footer{
+    /* height: 8vw; */
+    width: 100%;
+    background-color: black;
+    padding: 3vw 7vw 1.5vw 7vw;
+}
+
+.footer .top{
+    display: flex;
+    width: 100%;
+    /* background-color: #BF2915; */
+    justify-content: space-between;
+}
+
+.footer .top .lft{
+   height: 100%;
+   width: 20%;
+   /* background-color: #909090; */
+}
+
+.footer .top .lft img{
+   width: 12vw;
+}
+
+.footer .top .mid{
+    width: 35%;
+}
+
+.footer .top .mid p{
+    font-size: 1.1vw;
+   color: #F5F5F5;
+   letter-spacing: .05vw;
+}
+
+.footer .top .mid form input,.footer .top .mid form button{
+  display: block;
+  width: 100%;
+  height: 3vw;
+  margin-top: 2vw;
+  padding: 0 2vw;
+  border-radius: .5vw;
+  border: none;
+  font-size: 1.2vw;
+  outline: none;
+  background-color: #F5F5F5;
+}
+
+.footer .top .mid form button{
+    background-color: #01838D;
+    color: #F5F5F5;
+    font-size: 1.3vw;
+    letter-spacing: .08vw;
+}
+
+.footer .top .mid form input::placeholder{
+    font-size: 1vw;
+    letter-spacing: .05vw;
+}
+
+.footer .top .mid form span{
+    font-size: 1vw;
+    color: #BF2915;
+}
+
+.footer .top .right{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .top .right .company p, .footer .top .right .social p{
+    color: #F5F5F5;
+    font-size: 1.3vw;
+}
+
+.footer .top .right .company a{
+    display: block;
+    color: #f5f5f5ba;
+    text-decoration: none;
+    margin-top: 1vw;
+    font-size: 1.1vw;
+}
+
+.footer .top .right .social img{
+    height: 1.5vw;
+    margin-top: 1vw;
+}
+
+
+.footer .btm{
+    width: 100%;
+    border-top: .1vw solid #f5f5f5a3;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .btm p{
+    margin-top: 1.5vw;
+    color: #F5F5F5;
+    font-size: 1vw;
+    letter-spacing: .05vw;
+}
+
 /* //////////////////////////// Home Page Responsive Starts ///////////////////  */
 
 
@@ -679,6 +786,8 @@ button {
       width: 7vw;
   }
 
+  /* =============================== Home Page Responsive ======================== */
+
   #landing_sec #banner{
       margin-top: 26vw;
       height: 114vw;
@@ -808,5 +917,81 @@ button {
       padding: 1vw 2.8vw;
       margin-top: 3vw;
       margin-bottom: 1vw;
+  }
+
+  /* =================================Footer Responsive ========================== */
+
+  .footer{
+    padding: 6vw 7vw 3.5vw 7vw;
+  }
+
+  .footer .top{
+     flex-direction: column;
+  }
+
+  .footer .top .f-child{
+      width: 100% !important;
+  }
+
+  .footer .top .lft img{
+      width: 35vw;
+  }
+
+  .footer .top .mid{
+     margin-top: 4vw;
+  }
+
+  .footer .top .mid p{
+      font-size: 4.1vw;
+  }
+
+  .footer .top .mid form input, .footer .top .mid form button{
+      margin-top: 6vw;
+      height: 10vw;
+  }
+
+  .footer .top .mid form input{
+      font-size: 4.5vw;
+      padding: 0 5vw;
+  }
+
+  .footer .top .mid form input::placeholder{
+    font-size: 3.5vw;
+}
+
+  .footer .top .mid form span{
+      font-size: 2.8vw;
+  }
+
+  .footer .top .mid form button{
+      font-size: 5.3vw;
+  }
+
+  .footer .top .right{
+      margin-top: 8vw;
+  }
+
+  .footer .top .right .company p, .footer .top .right .social p{
+      font-size: 4.3vw;
+  }
+
+  .footer .top .right .company a{
+      font-size: 3.3vw;
+      margin-top: 2vw;
+  }
+
+  .footer .top .right .social img{
+      height: 4.5vw;
+      margin-top: 3vw;
+      margin-right: 2vw;
+  }
+
+  .footer .btm{
+      margin-top: 5vw;
+  }
+
+  .footer .btm p{
+      margin-top: 3.5vw;
+      font-size: 3vw;
   }
 }
