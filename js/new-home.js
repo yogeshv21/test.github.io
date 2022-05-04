@@ -115,3 +115,21 @@ function closedropdown(){
   document.querySelector('.category-box').style.display = 'none';
   document.querySelector(".bridg").style.height = 'initial'
 }
+
+// ============================ view more brands button ============================//
+
+var flag = 0;
+function viewMore(){
+  if(flag === 0){
+    document.querySelector('.view-more').style.display = 'flex';
+    document.querySelector('.view-more-btn').textContent = 'Show Less';
+
+    flag = 1;
+  }else{
+    flag = 0;
+    document.querySelector('.view-more').style.display = 'none';
+    document.querySelector('.view-more-btn').textContent = 'Show More';
+
+  }
+
+}

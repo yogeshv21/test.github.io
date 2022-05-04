@@ -12,6 +12,8 @@
 
 @font-face {
     font-family: cabin-medium;
+    font-family: cabin-medium;
+
     src: url(../fonts/Cabin-SemiBold.ttf);
 }
 
@@ -256,6 +258,7 @@ button {
     line-height: 5vw;
     color: #01838D;
     letter-spacing: .3vw;
+    text-shadow: 0 .5vw .5vw  rgba(0, 0, 0, 0.249) ;
 }
 
 #banner #txt-wraper #inp-cont {
@@ -535,6 +538,97 @@ button {
     font-size: 1vw;
     letter-spacing: .08vw;
     margin-top: 1vw;
+}
+
+/* ////////////////////////////////// Brands Page Css Start ///////////////////////////////// */
+
+.brand-category{
+    font-size: 3vw;
+    margin-top: 2vw;
+    letter-spacing: .2vw;
+    text-align: center;
+}
+
+.brand-card-cont{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2vw 7vw;
+}
+
+.brand-card-cont .view-more{
+    display: none;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.brand-card-cont .view-more-btn{
+    font-size: 1.1vw;
+    padding: .5vw 2vw;
+    letter-spacing: .06vw;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: .3vw;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 2vw;
+}
+
+.brand-card-cont .brand-card{
+    padding: 1.3vw;
+    width: 19vw;
+    background-color: white;
+    border-radius: 1vw;
+    box-shadow: .1vw .1vw .6vw rgba(0, 0, 0, 0.161);
+    transition: all .5s;
+    margin: 1vw 1vw;
+}
+
+.brand-card-cont .brand-card:hover{
+    transform: scale(1.02);
+    box-shadow: .1vw .1vw .8vw rgba(0, 0, 0, 0.235);
+}
+
+.brand-card-cont .brand-card .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vw;
+    width: 100%;
+    border-radius: 1vw;
+    box-shadow: inset 0vw .1vw .5vw rgba(0, 0, 0, 0.185);
+}
+
+.brand-card-cont .brand-card .top img{
+    width: 15vw;
+}
+
+.brand-card-cont .brand-card .brand-discription{
+    text-align: center;
+    font-size: 1vw;
+    margin-top: 1.3vw;
+    line-height: 1.6vw;
+    color: rgba(0, 0, 0, 0.663);
+    font-family: cabin-medium;
+}
+
+.brand-card-cont .brand-card .brand-card-btn{
+    padding: .4vw 3vw;
+    border-radius: 10vw;
+    border: none;
+    background-color: #01838D;
+    color: white;
+    box-shadow: .1vw .1vw 1vw rgba(0, 0, 0, 0.205);
+    margin-top: 1.3vw;
+    margin-left: 50%;
+    font-size: 1vw;
+    letter-spacing: .07vw;
+    transform: translate(-50%, 0);
+}
+
+.brand-card-cont .brand-card .brand-card-btn:hover{
+    background-color: black;
 }
 
 /* ============================== Footer Css ======================= */
@@ -823,13 +917,13 @@ button {
 
   #banner #txt-wraper{
       top: 17%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      left: 16%;
+      transform: translate(0, -50%);
   }
 
   #banner #txt-wraper #main-heading{
-      font-size: 7.3vw;
-      line-height: 7.5vw;
+      font-size: 10.3vw;
+      line-height: 11vw;
   }
 
   #banner #txt-wraper #inp-cont{
@@ -961,6 +1055,8 @@ button {
 
   .footer .top .mid form span{
       font-size: 2.8vw;
+      display: block;
+      margin-top: 3.5vw;
   }
 
   .footer .top .mid form button{
@@ -994,4 +1090,56 @@ button {
       margin-top: 3.5vw;
       font-size: 3vw;
   }
+
+/* =========================== Brand Page Responsiv ====================== */
+  
+.brand-category{
+    font-size: 6vw;
+    margin-top: 5vw;
 }
+
+.brand-card-cont{
+    padding: 5vw 7vw;
+}
+
+/* #brand-page-main-head{
+  font-size: 7vw;
+} */
+
+  .brand-card-cont .brand-card{
+       padding: 3vw;
+       width: 39vw;
+       border-radius: 3.2vw;
+       box-shadow: .2vw .2vw .8vw hsla(0, 0%, 0%, 0.301);
+       margin: 2vw;
+  }
+
+  .brand-card-cont .brand-card .top{
+      height: 21vw;
+      border-radius: 3.2vw; 
+  }
+
+  .brand-card-cont .brand-card .top img{
+      width: 31vw;
+  }
+
+  .brand-card-cont .brand-card .brand-discription{
+      font-size: 2.8vw;
+      margin-top: 2.3vw;
+      line-height: initial;
+  }
+
+  .brand-card-cont .brand-card .brand-card-btn{
+      padding: 1vw 6vw;
+      margin-top: 3.3vw;
+      font-size: 3vw;
+  }
+
+  .brand-card-cont .view-more-btn{
+      font-size: 4.1vw;
+      padding: 1.5vw 5vw;
+      border-radius: 1.4vw;
+  }
+}
+
+
