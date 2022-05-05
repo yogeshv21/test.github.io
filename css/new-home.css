@@ -1238,6 +1238,10 @@ a {
         border-radius: 1vw;
     }
 
+    .sliders .comparison-card{
+        width: initial !important;
+    }
+
     .sliders .card-cont .card {
         width: 38.5vw !important;
         margin: 1vw 2.2vw;
