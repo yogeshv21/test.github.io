@@ -109,8 +109,7 @@ a {
     padding: 0 1.5vw;
     border-radius: .2vw;
     border: none;
-    outline: none;
-    font-size: 1vw;
+    font-size: 1.1vw;
     box-shadow: .05vw .05vw .5vw rgba(0, 0, 0, 0.113);
 }
 
@@ -1002,7 +1001,7 @@ a {
     color: #f5f5f5ba;
     text-decoration: none;
     margin-top: 1vw;
-    font-size: 1.1vw;
+    font-size: 1vw;
 }
 
 .footer .top .right .social img {
