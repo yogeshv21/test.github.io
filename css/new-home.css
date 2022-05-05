@@ -64,7 +64,7 @@ button {
     cursor: pointer;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -84,11 +84,11 @@ a{
     z-index: 99;
 }
 
-.overlay{
+.overlay {
     display: none;
 }
 
-.nav_bar .logo .menu{
+.nav_bar .logo .menu {
     display: none;
 }
 
@@ -97,13 +97,13 @@ a{
     margin-top: .5vw;
 }
 
-.nav_bar .search-cont{
+.nav_bar .search-cont {
     display: flex;
     align-items: center;
     margin-left: 7vw;
 }
 
-.nav_bar .search-cont .search{
+.nav_bar .search-cont .search {
     height: 2.1vw;
     width: 20vw;
     padding: 0 1.5vw;
@@ -114,7 +114,7 @@ a{
     box-shadow: .05vw .05vw .5vw rgba(0, 0, 0, 0.113);
 }
 
-.nav_bar .search-cont .search::placeholder{
+.nav_bar .search-cont .search::placeholder {
     color: rgba(0, 0, 0, 0.307);
 }
 
@@ -130,7 +130,7 @@ a{
     border-radius: .2vw;
 }
 
-.nav_bar .links .close{
+.nav_bar .links .close {
     display: none;
 }
 
@@ -168,7 +168,7 @@ a{
     transition: all .3s;
 }
 
-.nav_bar .links .category-drop{
+.nav_bar .links .category-drop {
     position: relative;
 }
 
@@ -180,14 +180,14 @@ a{
     background-color: blanchedalmond;
 }
 
-.nav_bar .bridg{
+.nav_bar .bridg {
     position: absolute;
     top: 0;
     height: 0;
     width: 8vw;
 }
 
-.nav_bar .links .category-box{
+.nav_bar .links .category-box {
     display: none;
     background-color: white;
     position: absolute;
@@ -199,39 +199,39 @@ a{
     overflow: hidden;
 }
 
-.links .category-box .cont{
+.links .category-box .cont {
     overflow: auto;
     height: calc(100% - 2.78vw);
 }
 
-.links .category-box .cont::-webkit-scrollbar{
+.links .category-box .cont::-webkit-scrollbar {
     width: .2vw;
     background-color: white;
     border-radius: 0 .5vw .5vw 0;
 }
 
-.links .category-box .cont::-webkit-scrollbar-thumb{
+.links .category-box .cont::-webkit-scrollbar-thumb {
     background-color: #01838D;
     border-radius: 10vw;
 }
 
-.nav_bar .links .category-box .top{
+.nav_bar .links .category-box .top {
     width: 100%;
     height: 1vw;
     background-color: #01838D;
     margin-bottom: .5vw;
 }
 
-.links .category-box .category{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding: .5vw 1vw;
-   font-size: 1.1vw;
-   cursor: pointer;
+.links .category-box .category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5vw 1vw;
+    font-size: 1.1vw;
+    cursor: pointer;
 }
 
-.links .category-box .category:hover{
+.links .category-box .category:hover {
     background-color: #F5F5F5;
 }
 
@@ -241,6 +241,7 @@ a{
 
 /* =================================== Landing Page ================================== */
 #landing {
+    position: relative;
     background-color: blue;
 }
 
@@ -249,9 +250,23 @@ a{
     height: 30vw;
     margin-top: 4.5vw;
     width: 100%;
-    background-image: url(../images/Group\ 217.png);
+    /* background-image: url(../images/Group\ 217.png); */
+    position: relative;
     background-size: cover;
+}
 
+#landing_sec #banner .banner-img,
+#landing_sec #banner .banner-img-responsiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#landing_sec #banner .banner-img-responsiv {
+    display: none;
 }
 
 #banner #txt-wraper {
@@ -266,7 +281,7 @@ a{
     line-height: 5vw;
     color: #01838D;
     letter-spacing: .3vw;
-    text-shadow: 0 .5vw .5vw  rgba(0, 0, 0, 0.249) ;
+    text-shadow: 0 .5vw .5vw rgba(0, 0, 0, 0.249);
 }
 
 #banner #txt-wraper #inp-cont {
@@ -319,10 +334,10 @@ a{
     border-radius: 100%;
     height: 3vw;
     width: 3vw;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-#banner #arrow img{
+#banner #arrow img {
     height: 2vw;
 }
 
@@ -421,7 +436,7 @@ a{
     transition: all .5s;
 }
 
-.sliders .card-cont .card:hover{
+.sliders .card-cont .card:hover {
     transform: scale(1.03);
 }
 
@@ -484,7 +499,7 @@ a{
     height: .8vw;
 }
 
-.sliders .card-cont .card .view-more{
+.sliders .card-cont .card .view-more {
     display: block;
     text-decoration: none;
     color: #01838D;
@@ -493,7 +508,7 @@ a{
     font-size: 1.2vw;
 }
 
-.card-cont .controle-btn-slider{
+.card-cont .controle-btn-slider {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -506,7 +521,7 @@ a{
     box-shadow: .1vw .1vw .5vw rgba(0, 0, 0, 0.122);
 }
 
-.card-cont .controle-btn-slider img{
+.card-cont .controle-btn-slider img {
     width: 2vw;
     opacity: .7;
 }
@@ -526,27 +541,27 @@ a{
 
 /* ===================Popular Brand Section ====================== */
 
-.card-cont .brand-card{
+.card-cont .brand-card {
     display: flex !important;
     flex-direction: column;
     align-items: center;
 }
 
-.card-cont .brand-card .brand-img-cont{
+.card-cont .brand-card .brand-img-cont {
     display: flex;
     height: 6vw !important;
     padding: .5vw;
 }
 
-.card-cont .brand-card .brand-img-cont img{
+.card-cont .brand-card .brand-img-cont img {
     width: 7vw;
 }
 
-.card-cont .brand-card .brand-img-cont .vs{
+.card-cont .brand-card .brand-img-cont .vs {
     width: 1.5vw;
 }
 
-.card-cont .brand-card button{
+.card-cont .brand-card button {
     border-radius: 100px;
     border: none;
     background-color: #01838D;
@@ -559,27 +574,27 @@ a{
 
 /* ////////////////////////////////// Brands Page Css Start ///////////////////////////////// */
 
-.brand-category{
+.brand-category {
     font-size: 3vw;
     margin-top: 2vw;
     letter-spacing: .2vw;
     text-align: center;
 }
 
-.brand-card-cont{
+.brand-card-cont {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     padding: 2vw 7vw;
 }
 
-.brand-card-cont .view-more{
+.brand-card-cont .view-more {
     display: none;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.brand-card-cont .view-more-btn{
+.view-more-btn {
     font-size: 1.1vw;
     padding: .5vw 2vw;
     letter-spacing: .06vw;
@@ -592,7 +607,7 @@ a{
     margin-top: 2vw;
 }
 
-.brand-card-cont .brand-card{
+.brand-card-cont .brand-card {
     padding: 1.3vw;
     width: 19vw;
     background-color: white;
@@ -602,12 +617,12 @@ a{
     margin: 1vw 1vw;
 }
 
-.brand-card-cont .brand-card:hover{
+.brand-card-cont .brand-card:hover {
     transform: scale(1.02);
     box-shadow: .1vw .1vw .8vw rgba(0, 0, 0, 0.235);
 }
 
-.brand-card-cont .brand-card .top{
+.brand-card-cont .brand-card .top {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -618,11 +633,11 @@ a{
     overflow: hidden;
 }
 
-.brand-card-cont .brand-card .top img{
+.brand-card-cont .brand-card .top img {
     width: 15vw;
 }
 
-.brand-card-cont .brand-card .brand-discription{
+.brand-card-cont .brand-card .brand-discription {
     text-align: center;
     font-size: 1vw;
     margin-top: 1.3vw;
@@ -631,7 +646,7 @@ a{
     font-family: cabin-medium;
 }
 
-.brand-card-cont .brand-card .brand-card-btn{
+.brand-card-cont .brand-card .brand-card-btn {
     padding: .4vw 3vw;
     border-radius: 10vw;
     border: none;
@@ -645,30 +660,30 @@ a{
     transform: translate(-50%, 0);
 }
 
-.brand-card-cont .brand-card .brand-card-btn:hover{
+.brand-card-cont .brand-card .brand-card-btn:hover {
     background-color: black;
 }
 
 /* ////////////////////////////////// Categories Page Css Start ///////////////////////////////// */
 
-.category-nav{
+.category-nav {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5vw;
     color: white;
-   height: 6vw;
-   width: 100%;
-   background-color: #01838D;
-   margin-top: 5vw;
+    height: 6vw;
+    width: 100%;
+    background-color: #01838D;
+    margin-top: 5vw;
 }
 
-.category-nav h1{
+.category-nav h1 {
     font-family: raleway-bold;
     letter-spacing: .1vw;
 }
 
-.categories-cards-wraper{
+.categories-cards-wraper {
     display: flex;
     flex-wrap: wrap;
     padding: 3vw 7vw;
@@ -676,41 +691,41 @@ a{
     white-space: nowrap;
 }
 
-.categories-cards-wraper a{
+.categories-cards-wraper a {
     text-decoration: none;
 }
 
-.categories-cards-wraper .category-card{
-   width: 19vw;
-   background-color: white;
-   margin: 1vw;
-   padding: 1.3vw;
-   border-radius: 1vw;
-   box-shadow: .1vw .1vw .6vw rgba(0, 0, 0, 0.161);
-   transition: all .5s;
+.categories-cards-wraper .category-card {
+    width: 19vw;
+    background-color: white;
+    margin: 1vw;
+    padding: 1.3vw;
+    border-radius: 1vw;
+    box-shadow: .1vw .1vw .6vw rgba(0, 0, 0, 0.161);
+    transition: all .5s;
 }
 
-.categories-cards-wraper .category-card:hover{
+.categories-cards-wraper .category-card:hover {
     transform: scale(1.02);
     box-shadow: .1vw .1vw .8vw rgba(0, 0, 0, 0.235);
 }
 
-.categories-cards-wraper .category-card .top{
+.categories-cards-wraper .category-card .top {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 12vw;
-   border-radius: 1vw;
-   overflow: hidden;
-   box-shadow: inset 0vw .1vw .5vw rgba(0, 0, 0, 0.185);
+    border-radius: 1vw;
+    overflow: hidden;
+    box-shadow: inset 0vw .1vw .5vw rgba(0, 0, 0, 0.185);
 
 }
 
-.categories-cards-wraper .category-card .top img{
+.categories-cards-wraper .category-card .top img {
     height: 15vw;
 }
 
-.categories-cards-wraper .category-card h4{
+.categories-cards-wraper .category-card h4 {
     text-align: center;
     color: #01838D;
     font-size: 1.8vw;
@@ -718,85 +733,271 @@ a{
     letter-spacing: .1vw;
 }
 
+/* ////////////////////////////////// Brand-comparison Page Css Start ///////////////////////////////// */
+
+#landing_sec .brand-vs-brand {
+    padding: 0 15vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    transform: translate(0 -50%);
+}
+
+#landing_sec .brand-vs-brand .lft,
+#landing_sec .brand-vs-brand .rgt {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+#landing_sec .brand-vs-brand .mid img {
+    height: 10vw;
+}
+
+#landing_sec .brand-vs-brand img {
+    height: 5vw;
+    filter: drop-shadow(0 .8vw .3vw rgba(0, 0, 0, 0.112));
+}
+
+#landing_sec .catrgory-name {
+    background-color: black;
+    padding: 1vw 0;
+}
+
+.catrgory-name h1 {
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: .2vw;
+}
+
+.product-div-cont {
+    width: 100%;
+    padding: 3vw 7vw;
+}
+
+.product-div-cont h2 {
+    font-size: 2vw;
+    letter-spacing: .1vw;
+    font-weight: 700;
+}
+
+.product-div-cont .product-card-cont {
+    /* background-color: #01838D; */
+    margin-top: 3vw;
+}
+
+.product-div-cont .product-card-cont .brand-logo img {
+    height: 3vw;
+    filter: drop-shadow(0 .8vw .3vw rgba(0, 0, 0, 0.112));
+}
+
+.product-div-cont .product-card-cont .card-cont {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5vw;
+    padding: .5vw 0;
+}
+
+.product-card-cont .card-cont .product-card {
+    width: 19vw;
+    margin: 1vw;
+    background-color: white;
+    border-radius: 1.5vw;
+    padding: 1vw 1vw 2vw 1vw;
+    box-shadow: .1vw .2vw 1.5vw rgba(0, 0, 0, 0.112);
+    transition: all .5s;
+}
+
+.product-card-cont .card-cont .product-card:hover {
+    transform: scale(1.02);
+    box-shadow: .1vw .5vw 2vw rgba(0, 0, 0, 0.154);
+}
+
+.product-card-cont .card-cont .product-card .product-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9vw;
+    overflow: hidden;
+}
+
+.product-card-cont .card-cont .product-card .product-img img {
+    height: 9vw;
+}
+
+.card-cont .product-card .product-name {
+    text-align: center;
+    font-size: .9vw;
+    font-weight: 600;
+    letter-spacing: .1vw;
+    /* margin-top: .5vw; */
+}
+
+.card-cont .product-card .amazon-btn {
+    padding: .1vw 3vw;
+    border-radius: 10vw;
+    border: none;
+    background-color: #01838D;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 1.5vw;
+    box-shadow: .2vw .2vw .8vw rgba(0, 0, 0, 0.275);
+    transition: all .5s;
+}
+
+.card-cont .product-card .amazon-btn:hover {
+    box-shadow: .2vw .2vw .4vw rgba(0, 0, 0, 0.454);
+    background-color: black;
+}
+
+.card-cont .product-card .amazon-btn img {
+    height: 1vw;
+    margin-top: .5vw;
+}
+
+.compare-brands {
+    padding: 0 7vw;
+}
+
+.compare-brands h2 {
+    font-size: 2vw;
+    letter-spacing: .1vw;
+    font-weight: 700;
+}
+
+.compare-brands p {
+    font-size: 1.2vw;
+    margin-top: 2vw;
+    line-height: 2vw;
+    letter-spacing: .05vw;
+    color: rgba(0, 0, 0, 0.821);
+}
+
+.brand-details-cards {
+    padding: 0 7vw;
+}
+
+.brand-details-cards .brand-card {
+    width: 100%;
+    background-color: white;
+    border-radius: 3vw;
+    box-shadow: .1vw .5vw 2vw rgba(0, 0, 0, 0.112);
+    padding: 3vw 4vw;
+    margin-top: 3vw;
+}
+
+.brand-details-cards .brand-card h2 {
+    font-size: 1.4vw;
+    letter-spacing: .1vw;
+    font-weight: 700;
+}
+
+.brand-details-cards .brand-card .brand-logo {
+    height: 3vw;
+    margin-top: 2vw;
+}
+
+.brand-details-cards .brand-card p {
+    font-size: 1.1vw;
+    margin-top: 2vw;
+    line-height: 2vw;
+    letter-spacing: .05vw;
+    color: rgba(0, 0, 0, 0.821);
+}
+
+.similar-brands-head {
+    padding: 0 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 
 /* ============================== Footer Css ======================= */
 
-.footer{
+.footer {
     /* height: 8vw; */
     width: 100%;
     background-color: black;
     padding: 3vw 7vw 1.5vw 7vw;
 }
 
-.footer .top{
+.footer .top {
     display: flex;
     width: 100%;
     /* background-color: #BF2915; */
     justify-content: space-between;
 }
 
-.footer .top .lft{
-   height: 100%;
-   width: 20%;
-   /* background-color: #909090; */
+.footer .top .lft {
+    height: 100%;
+    width: 20%;
+    /* background-color: #909090; */
 }
 
-.footer .top .lft img{
-   width: 12vw;
+.footer .top .lft img {
+    width: 12vw;
 }
 
-.footer .top .mid{
+.footer .top .mid {
     width: 35%;
 }
 
-.footer .top .mid p{
+.footer .top .mid p {
     font-size: 1.1vw;
-   color: #F5F5F5;
-   letter-spacing: .05vw;
+    color: #F5F5F5;
+    letter-spacing: .05vw;
 }
 
-.footer .top .mid form input,.footer .top .mid form button{
-  display: block;
-  width: 100%;
-  height: 3vw;
-  margin-top: 2vw;
-  padding: 0 2vw;
-  border-radius: .5vw;
-  border: none;
-  font-size: 1.2vw;
-  outline: none;
-  background-color: #F5F5F5;
+.footer .top .mid form input,
+.footer .top .mid form button {
+    display: block;
+    width: 100%;
+    height: 3vw;
+    margin-top: 2vw;
+    padding: 0 2vw;
+    border-radius: .5vw;
+    border: none;
+    font-size: 1.2vw;
+    outline: none;
+    background-color: #F5F5F5;
 }
 
-.footer .top .mid form button{
+.footer .top .mid form button {
     background-color: #01838D;
     color: #F5F5F5;
     font-size: 1.3vw;
     letter-spacing: .08vw;
 }
 
-.footer .top .mid form input::placeholder{
+.footer .top .mid form input::placeholder {
     font-size: 1vw;
     letter-spacing: .05vw;
 }
 
-.footer .top .mid form span{
+.footer .top .mid form span {
     font-size: 1vw;
     color: white;
 }
 
-.footer .top .right{
+.footer .top .right {
     width: 25%;
     display: flex;
     justify-content: space-between;
 }
 
-.footer .top .right .company p, .footer .top .right .social p{
+.footer .top .right .company p,
+.footer .top .right .social p {
     color: #F5F5F5;
     font-size: 1.3vw;
 }
 
-.footer .top .right .company a{
+.footer .top .right .company a {
     display: block;
     color: #f5f5f5ba;
     text-decoration: none;
@@ -804,13 +1005,13 @@ a{
     font-size: 1.1vw;
 }
 
-.footer .top .right .social img{
+.footer .top .right .social img {
     height: 1.5vw;
     margin-top: 1vw;
 }
 
 
-.footer .btm{
+.footer .btm {
     width: 100%;
     border-top: .1vw solid #f5f5f5a3;
     margin-top: 3vw;
@@ -818,452 +1019,547 @@ a{
     justify-content: center;
 }
 
-.footer .btm p{
+.footer .btm p {
     margin-top: 1.5vw;
     color: #F5F5F5;
     font-size: 1vw;
     letter-spacing: .05vw;
 }
 
-/* //////////////////////////// Home Page Responsive Starts ///////////////////  */
-
-
-@media(max-width: 600px){
-  .nav_bar{
-      display: initial;
-      height: initial;
-      padding: 3vw 7vw;
-  }
-
-  .nav_bar .overlay{
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgb(0 0 0 / 32%);
-      display: none;
-
-  }
-
-  .nav_bar .logo{
-      display: flex;
-      justify-content: space-between;
-  }
-
-  .nav_bar .logo .menu{
-      display: initial;
-  }
-
-  .nav_bar .logo img{
-      width: 24vw;
-  }
-
-  .nav_bar .logo .menu img{
-      width: 8vw;
-  }
-
-  .nav_bar .search-cont{
-      margin-left: initial;
-      margin-top: 3vw;
-  }
-
-  .nav_bar .search-cont .search{
-      height: 10.1vw;
-      font-size: 4.5vw;
-      width: 66vw;
-      padding: 0 5vw;
-      border-radius: 1vw;
-  }
-
-  .nav_bar .search-cont .search::placeholder{
-      font-size: 4vw;
-  }
-
-  .nav_bar .search-cont .search-btn{
-      width: 19vw;
-      margin-left: 1.5vw;
-      height: 10vw;
-      font-size: 4.5vw;
-      border-radius: 1vw;
-  }
-
-  .nav_bar .links{
-      position: fixed;
-      top: 0;
-      left: -100%;
-      height: 100%;
-      width: 80%;
-      background-color: #F5F5F5;
-      box-shadow: 1.5vw 0 4vw rgba(0, 0, 0, 0.211);
-      flex-direction: column;
-      align-items: initial;
-      transition: all .5s;
-      padding: 4vw 9vw;
-  }
-
-  .nav_bar .links li{
-      margin-top: 5vw;
-      margin-left: 0;
-  }
-
-  .nav_bar .links li a{
-      font-size: 7vw;
-      font-weight: 400;
-  }
-
-  .nav_bar .links li a:hover{
-      color: #01838D;
-  }
-
-  .nav_bar .links  .category-box{
-      background-color: initial;
-      position: initial;
-      width: 60%;
-      margin-top: 3vw;
-      display: initial;
-  }
-
-  .nav_bar .links .category-drop{
-      height: 100vw;
-  }
-
-  .links .category-box .cont{
-      margin-top: 4vw;
-  }
-
-  .links .category-box .cont::-webkit-scrollbar{
-      display: none;
-  }
-
-  .links .category-box .category{
-      font-size: 4.5vw;
-      padding: 2.5vw .8vw;
-  }
-
-  .nav_bar .links .category-box .top{
-      display: none;
-  }
-
-  .nav_bar .links .category p:hover{
-      color: #01838D;
-  }
-
-  .nav_bar .links .underline{
-      height: 1vw;
-      display: none;
-  }
-
-  .nav_bar .links .close{
-     display: flex;
-     justify-content: space-between;
-     margin-bottom: 13vw;
-  }
-
-  .nav_bar .links .close .logo{
-      height: 7vw;
-  }
-
-  .nav_bar .links .close .close-icon img{
-      width: 7vw;
-  }
-
-  /* =============================== Home Page Responsive ======================== */
-
-  #landing_sec #banner{
-      margin-top: 26vw;
-      height: 114vw;
-      background-image: url(../images/Group\ 247.png);
-  }
-
-  #banner #arrow{
-      height: 7vw;
-      width: 7vw;
-      bottom: -3.5vw;
-  }
-
-  #banner #arrow img{
-      height: 4vw;
-  }
-
-  #landing_sec #catogries-wraper{
-      height: 16vw;
-      padding: 0 8vw 0 10vw;
-  }
-
-  .controle-btn img{
-      height: 4vw;
-  }
-
-  #catogries-wraper .catgories-card p{
-      font-size: 3.5vw;
-  }
-
-  #catogries-wraper .catgories-card img{
-      height: 3.2vw;
-  }
-
-  #banner #txt-wraper{
-      top: 17%;
-      left: 16%;
-      transform: translate(0, -50%);
-  }
-
-  #banner #txt-wraper #main-heading{
-      font-size: 10.3vw;
-      line-height: 11vw;
-  }
-
-  #banner #txt-wraper #inp-cont{
-      display: none;
-  }
-
-  .sliders{
-      padding: 5vw 7vw;
-  }
-
-  .sliders .top h2{
-      width: 70%;
-      font-size: 4vw;
-  }
-
-  .sliders .top button{
-      font-size: 3vw;
-      padding: 2vw 3vw;
-      border-radius: 1vw;
-  }
-
-  .sliders .card-cont .card{
-      width: 38.5vw !important;
-      margin: 1vw 2.2vw;
-      padding: 2vw;
-      border-radius: 2.5vw;
-  }
-
-  .sliders .card-cont .card .view-more{
-      font-size: 3.5vw;
-      margin-top: 2vw;
-  }
-
-  .sliders .card-cont .card .img-cont{
-      height: 21vw;
-      border-radius: 2.5vw;
-  }
-
-  .card-cont .card .img-cont img{
-      width: 31vw;
-  }
-
-  .card-cont .card p{
-      font-size: 3.7vw;
-      margin-top: 2.2vw;
-  }
-
-  .card-cont .card .top-brands{
-      margin-top: 2.5vw;
-  }
-
-  .card-cont .card .brands{
-      margin-top: 4vw;
-  }
-
-  .card-cont .card .brands .brand-logo{
-      width: 12vw;
-  }
-
-  .card-cont .card .brands button{
-      padding: 1vw 1.5vw;
-  }
-
-  .card-cont .card .brands button img{
-    height: 2.5vw;
-  }
-
-  .card-cont .controle-btn-slider img{
-      width: 5vw;
-  }
-
-  .card-cont .slick-next{
-      right: -4.2vw;
-  }
-
-  .card-cont .brand-card .brand-img-cont{
-      height: 18vw !important;
-  }
-
-  .card-cont .brand-card .brand-img-cont img{
-      width: 15vw;
-  }
-
-  .card-cont .brand-card .brand-img-cont .vs{
-      width: 3.5vw;
-  }
-
-  .card-cont .brand-card button{
-      font-size: 2.8vw;
-      padding: 1vw 2.8vw;
-      margin-top: 3vw;
-      margin-bottom: 1vw;
-  }
-
-  /* =================================Footer Responsive ========================== */
-
-  .footer{
-    padding: 6vw 7vw 3.5vw 7vw;
-  }
-
-  .footer .top{
-     flex-direction: column;
-  }
-
-  .footer .top .f-child{
-      width: 100% !important;
-  }
-
-  .footer .top .lft img{
-      width: 35vw;
-  }
-
-  .footer .top .mid{
-     margin-top: 4vw;
-  }
-
-  .footer .top .mid p{
-      font-size: 4.1vw;
-  }
-
-  .footer .top .mid form input, .footer .top .mid form button{
-      margin-top: 6vw;
-      height: 10vw;
-  }
-
-  .footer .top .mid form input{
-      font-size: 4.5vw;
-      padding: 0 5vw;
-  }
-
-  .footer .top .mid form input::placeholder{
-    font-size: 3.5vw;
+/* //////////////////////////// Responsive Starts ///////////////////  */
+
+
+@media(max-width: 600px) {
+    .nav_bar {
+        display: initial;
+        height: initial;
+        padding: 3vw 7vw;
+    }
+
+    .nav_bar .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(0 0 0 / 32%);
+        display: none;
+
+    }
+
+    .nav_bar .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav_bar .logo .menu {
+        display: initial;
+    }
+
+    .nav_bar .logo img {
+        width: 24vw;
+    }
+
+    .nav_bar .logo .menu img {
+        width: 8vw;
+    }
+
+    .nav_bar .search-cont {
+        margin-left: initial;
+        margin-top: 3vw;
+    }
+
+    .nav_bar .search-cont .search {
+        height: 10.1vw;
+        font-size: 4.5vw;
+        width: 66vw;
+        padding: 0 5vw;
+        border-radius: 1vw;
+    }
+
+    .nav_bar .search-cont .search::placeholder {
+        font-size: 4vw;
+    }
+
+    .nav_bar .search-cont .search-btn {
+        width: 19vw;
+        margin-left: 1.5vw;
+        height: 10vw;
+        font-size: 4.5vw;
+        border-radius: 1vw;
+    }
+
+    .nav_bar .links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 80%;
+        background-color: #F5F5F5;
+        box-shadow: 1.5vw 0 4vw rgba(0, 0, 0, 0.211);
+        flex-direction: column;
+        align-items: initial;
+        transition: all .5s;
+        padding: 4vw 9vw;
+    }
+
+    .nav_bar .links li {
+        margin-top: 5vw;
+        margin-left: 0;
+    }
+
+    .nav_bar .links li a {
+        font-size: 7vw;
+        font-weight: 400;
+    }
+
+    .nav_bar .links li a:hover {
+        color: #01838D;
+    }
+
+    .nav_bar .links .category-box {
+        background-color: initial;
+        position: initial;
+        width: 60%;
+        margin-top: 3vw;
+        display: initial;
+    }
+
+    .nav_bar .links .category-drop {
+        height: 100vw;
+    }
+
+    .links .category-box .cont {
+        margin-top: 4vw;
+    }
+
+    .links .category-box .cont::-webkit-scrollbar {
+        display: none;
+    }
+
+    .links .category-box .category {
+        font-size: 4.5vw;
+        padding: 2.5vw .8vw;
+    }
+
+    .nav_bar .links .category-box .top {
+        display: none;
+    }
+
+    .nav_bar .links .category p:hover {
+        color: #01838D;
+    }
+
+    .nav_bar .links .underline {
+        height: 1vw;
+        display: none;
+    }
+
+    .nav_bar .links .close {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 13vw;
+    }
+
+    .nav_bar .links .close .logo {
+        height: 7vw;
+    }
+
+    .nav_bar .links .close .close-icon img {
+        width: 7vw;
+    }
+
+    /* =============================== Home Page Responsive ======================== */
+
+    #landing_sec #banner {
+        margin-top: 26vw;
+        height: 114vw;
+        /* background-image: url(../images/Group\ 247.png); */
+    }
+
+    #landing_sec #banner .banner-img-responsiv {
+        display: initial;
+    }
+
+    #banner #arrow {
+        height: 7vw;
+        width: 7vw;
+        bottom: -3.5vw;
+    }
+
+    #banner #arrow img {
+        height: 4vw;
+    }
+
+    #landing_sec #catogries-wraper {
+        height: 16vw;
+        padding: 0 8vw 0 10vw;
+    }
+
+    .controle-btn img {
+        height: 4vw;
+    }
+
+    #catogries-wraper .catgories-card p {
+        font-size: 3.5vw;
+    }
+
+    #catogries-wraper .catgories-card img {
+        height: 3.2vw;
+    }
+
+    #banner #txt-wraper {
+        top: 17%;
+        left: 16%;
+        transform: translate(0, -50%);
+    }
+
+    #banner #txt-wraper #main-heading {
+        font-size: 10.3vw;
+        line-height: 11vw;
+    }
+
+    #banner #txt-wraper #inp-cont {
+        display: none;
+    }
+
+    .sliders {
+        padding: 5vw 7vw;
+    }
+
+    .sliders .top h2 {
+        width: 70%;
+        font-size: 4vw;
+    }
+
+    .sliders .top button {
+        font-size: 3vw;
+        padding: 2vw 3vw;
+        border-radius: 1vw;
+    }
+
+    .sliders .card-cont .card {
+        width: 38.5vw !important;
+        margin: 1vw 2.2vw;
+        padding: 2vw;
+        border-radius: 2.5vw;
+    }
+
+    .sliders .card-cont .card .view-more {
+        font-size: 3.5vw;
+        margin-top: 2vw;
+    }
+
+    .sliders .card-cont .card .img-cont {
+        height: 21vw;
+        border-radius: 2.5vw;
+    }
+
+    .card-cont .card .img-cont img {
+        width: 31vw;
+    }
+
+    .card-cont .card p {
+        font-size: 3.7vw;
+        margin-top: 2.2vw;
+    }
+
+    .card-cont .card .top-brands {
+        margin-top: 2.5vw;
+    }
+
+    .card-cont .card .brands {
+        margin-top: 4vw;
+    }
+
+    .card-cont .card .brands .brand-logo {
+        width: 12vw;
+    }
+
+    .card-cont .card .brands button {
+        padding: 1vw 1.5vw;
+    }
+
+    .card-cont .card .brands button img {
+        height: 2.5vw;
+    }
+
+    .card-cont .controle-btn-slider img {
+        width: 5vw;
+    }
+
+    .card-cont .slick-next {
+        right: -4.2vw;
+    }
+
+    .card-cont .brand-card .brand-img-cont {
+        height: 18vw !important;
+    }
+
+    .card-cont .brand-card .brand-img-cont img {
+        width: 15vw;
+    }
+
+    .card-cont .brand-card .brand-img-cont .vs {
+        width: 3.5vw;
+    }
+
+    .card-cont .brand-card button {
+        font-size: 2.8vw;
+        padding: 1vw 2.8vw;
+        margin-top: 3vw;
+        margin-bottom: 1vw;
+    }
+
+    /* =================================Footer Responsive ========================== */
+
+    .footer {
+        padding: 6vw 7vw 3.5vw 7vw;
+    }
+
+    .footer .top {
+        flex-direction: column;
+    }
+
+    .footer .top .f-child {
+        width: 100% !important;
+    }
+
+    .footer .top .lft img {
+        width: 35vw;
+    }
+
+    .footer .top .mid {
+        margin-top: 4vw;
+    }
+
+    .footer .top .mid p {
+        font-size: 4.1vw;
+    }
+
+    .footer .top .mid form input,
+    .footer .top .mid form button {
+        margin-top: 6vw;
+        height: 10vw;
+    }
+
+    .footer .top .mid form input {
+        font-size: 4.5vw;
+        padding: 0 5vw;
+    }
+
+    .footer .top .mid form input::placeholder {
+        font-size: 3.5vw;
+    }
+
+    .footer .top .mid form span {
+        font-size: 2.8vw;
+        display: block;
+        margin-top: 3.5vw;
+    }
+
+    .footer .top .mid form button {
+        font-size: 5.3vw;
+    }
+
+    .footer .top .right {
+        margin-top: 8vw;
+    }
+
+    .footer .top .right .company p,
+    .footer .top .right .social p {
+        font-size: 4.3vw;
+    }
+
+    .footer .top .right .company a {
+        font-size: 3.3vw;
+        margin-top: 2vw;
+    }
+
+    .footer .top .right .social img {
+        height: 4.5vw;
+        margin-top: 3vw;
+        margin-right: 2vw;
+    }
+
+    .footer .btm {
+        margin-top: 5vw;
+    }
+
+    .footer .btm p {
+        margin-top: 3.5vw;
+        font-size: 3vw;
+    }
+
+    /* =========================== Brand Page Responsiv ====================== */
+
+    .brand-category {
+        font-size: 6vw;
+        margin-top: 5vw;
+    }
+
+    .brand-card-cont {
+        padding: 5vw 7vw;
+    }
+
+
+    .brand-card-cont .brand-card {
+        padding: 3vw;
+        width: 39vw;
+        border-radius: 3.2vw;
+        box-shadow: .2vw .2vw .8vw hsla(0, 0%, 0%, 0.301);
+        margin: 2vw;
+    }
+
+    .brand-card-cont .brand-card .top {
+        height: 21vw;
+        border-radius: 3.2vw;
+    }
+
+    .brand-card-cont .brand-card .top img {
+        width: 31vw;
+    }
+
+    .brand-card-cont .brand-card .brand-discription {
+        font-size: 2.8vw;
+        margin-top: 2.3vw;
+        line-height: initial;
+    }
+
+    .brand-card-cont .brand-card .brand-card-btn {
+        padding: 1vw 6vw;
+        margin-top: 3.3vw;
+        font-size: 3vw;
+    }
+
+    .brand-card-cont .view-more-btn {
+        font-size: 4.1vw;
+        padding: 1.5vw 5vw;
+        border-radius: 1.4vw;
+    }
+
+    /* ======================Categories Page Responsive ============================= */
+
+    .category-nav {
+        height: 10vw;
+        margin-top: 28vw;
+        font-size: 3vw;
+    }
+
+    .category-nav h1 {
+        letter-spacing: .5vw;
+    }
+
+    .categories-cards-wraper .category-card {
+        width: 39vw;
+        padding: 2.4vw;
+        border-radius: 3vw;
+        margin: 2vw;
+    }
+
+    .categories-cards-wraper .category-card .top {
+        height: 23vw;
+        border-radius: 3vw;
+    }
+
+    .categories-cards-wraper .category-card .top img {
+        height: 27vw;
+    }
+
+    .categories-cards-wraper .category-card h4 {
+        font-size: 4.5vw;
+        margin-top: 2vw;
+        letter-spacing: .3vw;
+    }
+
+    /* ======================Brand Comparison Page Responsive ============================= */
+
+    #landing_sec .brand-comparison-banner-responsiv {
+        height: 30vw !important;
+    }
+
+    .catrgory-name h1 {
+        font-size: 3vw;
+        letter-spacing: .5vw;
+    }
+
+    .product-div-cont h2 {
+        font-size: 4vw;
+    }
+
+    .product-div-cont .product-card-cont .brand-logo img {
+        height: 4vw;
+    }
+
+    .product-card-cont .card-cont .product-card {
+        width: 38vw;
+        padding: 2vw 2vw 3vw 2vw;
+        border-radius: 5.5vw;
+        margin: 2vw;
+
+    }
+
+    .product-card-cont .card-cont .product-card .product-img {
+        height: 18vw;
+    }
+
+    .product-card-cont .card-cont .product-card .product-img img {
+        height: 18vw;
+    }
+
+    .card-cont .product-card .product-name {
+        font-size: 2.5vw;
+    }
+
+    .card-cont .product-card .amazon-btn {
+        padding: .5vw 6vw;
+        margin-top: 3vw;
+    }
+
+    .card-cont .product-card .amazon-btn img {
+        height: 3vw;
+        margin-top: 1vw;
+    }
+
+    .compare-brands h2 {
+        font-size: 4vw;
+    }
+
+    .compare-brands p {
+        font-size: 3.2vw;
+        line-height: 5vw;
+    }
+
+    .brand-details-cards .brand-card {
+        padding: 7vw;
+        margin-top: 6vw;
+        border-radius: 5vw;
+    }
+
+    .brand-details-cards .brand-card h2 {
+        font-size: 3.4vw;
+    }
+
+    .brand-details-cards .brand-card .brand-logo {
+        height: 9vw;
+        margin-top: 5vw;
+    }
+
+    .brand-details-cards .brand-card p {
+        font-size: 3vw;
+        line-height: 5.5vw;
+    }
+
+    .similar-brands-head h2 {
+        font-size: 4vw;
+        width: 70%;
+    }
+
+    .similar-brands-head .view-more-btn {
+        margin-left: initial;
+        font-size: 3vw;
+        padding: 1.5vw 3vw;
+        border-radius: 1.3vw;
+        transform: initial;
+    }
 }
-
-  .footer .top .mid form span{
-      font-size: 2.8vw;
-      display: block;
-      margin-top: 3.5vw;
-  }
-
-  .footer .top .mid form button{
-      font-size: 5.3vw;
-  }
-
-  .footer .top .right{
-      margin-top: 8vw;
-  }
-
-  .footer .top .right .company p, .footer .top .right .social p{
-      font-size: 4.3vw;
-  }
-
-  .footer .top .right .company a{
-      font-size: 3.3vw;
-      margin-top: 2vw;
-  }
-
-  .footer .top .right .social img{
-      height: 4.5vw;
-      margin-top: 3vw;
-      margin-right: 2vw;
-  }
-
-  .footer .btm{
-      margin-top: 5vw;
-  }
-
-  .footer .btm p{
-      margin-top: 3.5vw;
-      font-size: 3vw;
-  }
-
-/* =========================== Brand Page Responsiv ====================== */
-  
-.brand-category{
-    font-size: 6vw;
-    margin-top: 5vw;
-}
-
-.brand-card-cont{
-    padding: 5vw 7vw;
-}
-
-
-  .brand-card-cont .brand-card{
-       padding: 3vw;
-       width: 39vw;
-       border-radius: 3.2vw;
-       box-shadow: .2vw .2vw .8vw hsla(0, 0%, 0%, 0.301);
-       margin: 2vw;
-  }
-
-  .brand-card-cont .brand-card .top{
-      height: 21vw;
-      border-radius: 3.2vw; 
-  }
-
-  .brand-card-cont .brand-card .top img{
-      width: 31vw;
-  }
-
-  .brand-card-cont .brand-card .brand-discription{
-      font-size: 2.8vw;
-      margin-top: 2.3vw;
-      line-height: initial;
-  }
-
-  .brand-card-cont .brand-card .brand-card-btn{
-      padding: 1vw 6vw;
-      margin-top: 3.3vw;
-      font-size: 3vw;
-  }
-
-  .brand-card-cont .view-more-btn{
-      font-size: 4.1vw;
-      padding: 1.5vw 5vw;
-      border-radius: 1.4vw;
-  }
-
-  /* ======================Categories Page Responsive ============================= */
-
-  .category-nav{
-      height: 10vw;
-      margin-top: 28vw;
-      font-size: 3vw;
-  }
-
-  .category-nav h1{
-      letter-spacing: .5vw;
-  }
-
-  .categories-cards-wraper .category-card{
-      width: 39vw;
-      padding: 2.4vw;
-      border-radius: 3vw;
-      margin: 2vw;
-  }
-
-  .categories-cards-wraper .category-card .top{
-      height: 23vw;
-      border-radius: 3vw;
-  }
-
-  .categories-cards-wraper .category-card .top img{
-      height: 27vw;
-  }
-
-  .categories-cards-wraper .category-card h4{
-      font-size: 4.5vw;
-      margin-top: 2vw;
-      letter-spacing: .3vw;
-  }
-}
-
-
