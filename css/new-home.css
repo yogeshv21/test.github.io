@@ -945,11 +945,6 @@ a {
     margin-top: 2vw;
 }
 
-/* .brand-products-cont #view-more{
-    margin-left: initial !important;
-    transform: initial !important;
-    margin-top: initial !important;
-} */
 
 /* ============================== Footer Css ======================= */
 
@@ -1512,6 +1507,14 @@ a {
 
     .brand-details{
         padding: 6vw 7vw;
+    }
+
+    .landing_sec .perticular-brand{
+        top: 35%;
+    }
+
+    .landing_sec .perticular-brand .mid img{
+        height: 12vw;
     }
 
       /* =================================Footer Responsive ========================== */
