@@ -733,7 +733,7 @@ a {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 30%;
+    top: 35%;
     width: 100%;
     transform: translate(0 -50%);
 }
@@ -1427,7 +1427,7 @@ a {
     /* ======================Brand Comparison Page Responsive ============================= */
 
     .landing_sec .brand-comparison-banner-responsiv {
-        height: 30vw !important;
+        height: 40vw !important;
     }
 
     .catrgory-name h1 {
