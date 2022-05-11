@@ -244,7 +244,7 @@ a {
     background-color: blue;
 }
 
-#landing_sec #banner {
+.landing_sec #banner {
     position: relative;
     height: 30vw;
     margin-top: 4.5vw;
@@ -254,8 +254,8 @@ a {
     background-size: cover;
 }
 
-#landing_sec #banner .banner-img,
-#landing_sec #banner .banner-img-responsiv {
+.landing_sec #banner .banner-img,
+.landing_sec #banner .banner-img-responsiv {
     position: absolute;
     top: 0;
     left: 0;
@@ -264,7 +264,7 @@ a {
     object-fit: cover;
 }
 
-#landing_sec #banner .banner-img-responsiv {
+.landing_sec #banner .banner-img-responsiv {
     display: none;
 }
 
@@ -340,7 +340,7 @@ a {
     height: 2vw;
 }
 
-#landing_sec #catogries-wraper {
+.landing_sec #catogries-wraper {
     position: relative;
     display: flex;
     align-items: center;
@@ -351,7 +351,7 @@ a {
     cursor: pointer;
 }
 
-#landing_sec #catogries-wraper .catgories-card {
+.landing_sec #catogries-wraper .catgories-card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -399,7 +399,7 @@ a {
     justify-content: space-between;
 }
 
-.sliders .top button {
+ .btn {
     padding: .6vw 2vw;
     border-radius: .5vw;
     font-size: 1.3vw;
@@ -410,11 +410,11 @@ a {
     transition: all .5s;
 }
 
-.sliders .top button:hover {
+.btn:hover {
     box-shadow: .3vw .3vw .3vw rgba(0, 0, 0, 0.372);
 }
 
-.sliders .top h2 {
+.heading-h2 {
     font-size: 2vw;
     letter-spacing: .18vw;
 }
@@ -593,14 +593,7 @@ a {
     width: 100%;
 }
 
-.view-more-btn {
-    font-size: 1.1vw;
-    padding: .5vw 2vw;
-    letter-spacing: .06vw;
-    border: none;
-    background-color: black;
-    color: white;
-    border-radius: .3vw;
+.brand-card-cont .btn  {
     margin-left: 50%;
     transform: translate(-50%, 0);
     margin-top: 2vw;
@@ -734,7 +727,7 @@ a {
 
 /* ////////////////////////////////// Brand-comparison Page Css Start ///////////////////////////////// */
 
-#landing_sec .brand-vs-brand {
+.landing_sec .brand-vs-brand {
     padding: 0 15vw;
     display: flex;
     justify-content: space-between;
@@ -745,23 +738,23 @@ a {
     transform: translate(0 -50%);
 }
 
-#landing_sec .brand-vs-brand .lft,
-#landing_sec .brand-vs-brand .rgt {
+.landing_sec .brand-vs-brand .lft,
+.landing_sec .brand-vs-brand .rgt {
     width: 40%;
     display: flex;
     justify-content: center;
 }
 
-#landing_sec .brand-vs-brand .mid img {
+.landing_sec .brand-vs-brand .mid img {
     height: 10vw;
 }
 
-#landing_sec .brand-vs-brand img {
+.landing_sec .brand-vs-brand img {
     height: 5vw;
     filter: drop-shadow(0 .8vw .3vw rgba(0, 0, 0, 0.112));
 }
 
-#landing_sec .catrgory-name {
+.landing_sec .catrgory-name {
     background-color: black;
     padding: 1vw 0;
 }
@@ -776,12 +769,6 @@ a {
 .product-div-cont {
     width: 100%;
     padding: 3vw 7vw;
-}
-
-.product-div-cont h2 {
-    font-size: 2vw;
-    letter-spacing: .1vw;
-    font-weight: 700;
 }
 
 .product-div-cont .product-card-cont {
@@ -915,7 +902,54 @@ a {
     justify-content: space-between;
 }
 
+/* ////////////////////////////////// Particular Brand Page Css Start ///////////////////////////////// */
 
+.landing_sec .perticular-brand{
+    justify-content: center;
+    top: 40%;
+}
+
+.landing_sec .perticular-brand .mid img{
+    height: 6vw;
+}
+
+.brand-details{
+    padding: 3vw 7vw;
+    width: 100%;
+    /* background-color: #BF2915; */
+}
+
+.brand-details h3{
+    letter-spacing: .05vw;
+}
+
+.brand-details p{
+    letter-spacing: .05vw;
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.785);
+    margin-top: 2vw;
+}
+
+.brand-products-cont{
+    padding: 0 7vw;
+    width: 100%;
+}
+
+.brand-products-cont .product-div-cont{
+    padding: initial;
+}
+
+.brand-products-cont .product-div-cont .product-card-cont{
+    margin-top: 2vw;
+}
+
+/* .brand-products-cont #view-more{
+    margin-left: initial !important;
+    transform: initial !important;
+    margin-top: initial !important;
+} */
 
 /* ============================== Footer Css ======================= */
 
@@ -1170,13 +1204,13 @@ a {
 
     /* =============================== Home Page Responsive ======================== */
 
-    #landing_sec #banner {
+    .landing_sec #banner {
         margin-top: 26vw;
         height: 114vw;
         /* background-image: url(../images/Group\ 247.png); */
     }
 
-    #landing_sec #banner .banner-img-responsiv {
+    .landing_sec #banner .banner-img-responsiv {
         display: initial;
     }
 
@@ -1190,7 +1224,7 @@ a {
         height: 4vw;
     }
 
-    #landing_sec #catogries-wraper {
+    .landing_sec #catogries-wraper {
         height: 16vw;
         padding: 0 8vw 0 10vw;
     }
@@ -1226,12 +1260,12 @@ a {
         padding: 5vw 7vw;
     }
 
-    .sliders .top h2 {
-        width: 70%;
+   .heading-h2{
+        width: 75%;
         font-size: 4vw;
     }
 
-    .sliders .top button {
+    .btn {
         font-size: 3vw;
         padding: 2vw 3vw;
         border-radius: 1vw;
@@ -1314,9 +1348,175 @@ a {
         margin-bottom: 1vw;
     }
 
-    /* =================================Footer Responsive ========================== */
+    /* =========================== Brand Page Responsiv ====================== */
 
-    .footer {
+    .brand-category {
+        font-size: 6vw;
+        margin-top: 5vw;
+    }
+
+    .brand-card-cont {
+        padding: 5vw 7vw;
+    }
+
+
+    .brand-card-cont .brand-card {
+        padding: 3vw;
+        width: 39vw;
+        border-radius: 3.2vw;
+        box-shadow: .2vw .2vw .8vw hsla(0, 0%, 0%, 0.301);
+        margin: 2vw;
+    }
+
+    .brand-card-cont .brand-card .top {
+        height: 21vw;
+        border-radius: 3.2vw;
+    }
+
+    .brand-card-cont .brand-card .top img {
+        width: 31vw;
+    }
+
+    .brand-card-cont .brand-card .brand-discription {
+        font-size: 2.8vw;
+        margin-top: 2.3vw;
+        line-height: initial;
+    }
+
+    .brand-card-cont .brand-card .brand-card-btn {
+        padding: 1vw 6vw;
+        margin-top: 3.3vw;
+        font-size: 3vw;
+    }
+
+    .brand-card-cont .btn {
+        font-size: 4.1vw;
+        padding: 1.5vw 5vw;
+        border-radius: 1.4vw;
+    }
+
+    /* ======================Categories Page Responsive ============================= */
+
+    .category-nav {
+        height: 10vw;
+        margin-top: 28vw;
+        font-size: 3vw;
+    }
+
+    .category-nav h1 {
+        letter-spacing: .5vw;
+    }
+
+    .categories-cards-wraper .category-card {
+        width: 39vw;
+        padding: 2.4vw;
+        border-radius: 3vw;
+        margin: 2vw;
+    }
+
+    .categories-cards-wraper .category-card .top {
+        height: 23vw;
+        border-radius: 3vw;
+    }
+
+    .categories-cards-wraper .category-card .top img {
+        height: 27vw;
+    }
+
+    .categories-cards-wraper .category-card h4 {
+        font-size: 4.5vw;
+        margin-top: 2vw;
+        letter-spacing: .3vw;
+    }
+
+    /* ======================Brand Comparison Page Responsive ============================= */
+
+    .landing_sec .brand-comparison-banner-responsiv {
+        height: 30vw !important;
+    }
+
+    .catrgory-name h1 {
+        font-size: 3vw;
+        letter-spacing: .5vw;
+    }
+
+    .product-div-cont .product-card-cont .brand-logo img {
+        height: 5vw;
+    }
+
+    .product-card-cont .card-cont .product-card {
+        width: 38vw;
+        padding: 2vw 2vw 3vw 2vw;
+        border-radius: 5.5vw;
+        margin: 2vw;
+
+    }
+
+    .product-card-cont .card-cont .product-card .product-img {
+        height: 18vw;
+    }
+
+    .product-card-cont .card-cont .product-card .product-img img {
+        height: 18vw;
+    }
+
+    .card-cont .product-card .product-name {
+        font-size: 2.5vw;
+    }
+
+    .card-cont .product-card .amazon-btn {
+        padding: .5vw 6vw;
+        margin-top: 3vw;
+    }
+
+    .card-cont .product-card .amazon-btn img {
+        height: 3vw;
+        margin-top: 1vw;
+    }
+
+    .compare-brands h2 {
+        font-size: 4vw;
+    }
+
+    .compare-brands p {
+        font-size: 3.2vw;
+        line-height: 5vw;
+    }
+
+    .brand-details-cards .brand-card {
+        padding: 7vw;
+        margin-top: 6vw;
+        border-radius: 5vw;
+    }
+
+    .brand-details-cards .brand-card h2 {
+        font-size: 3.4vw;
+    }
+
+    .brand-details-cards .brand-card .brand-logo {
+        height: 9vw;
+        margin-top: 5vw;
+    }
+
+    .brand-details-cards .brand-card p {
+        font-size: 3vw;
+        line-height: 5.5vw;
+    }
+
+    /* ======================Particular Brand Page Responsive ============================= */
+
+    .brand-details p{
+        font-size: 3.4vw;
+        line-height: 6vw;
+    }
+
+    .brand-details{
+        padding: 6vw 7vw;
+    }
+
+      /* =================================Footer Responsive ========================== */
+
+      .footer {
         padding: 6vw 7vw 3.5vw 7vw;
     }
 
@@ -1394,175 +1594,4 @@ a {
         font-size: 3vw;
     }
 
-    /* =========================== Brand Page Responsiv ====================== */
-
-    .brand-category {
-        font-size: 6vw;
-        margin-top: 5vw;
-    }
-
-    .brand-card-cont {
-        padding: 5vw 7vw;
-    }
-
-
-    .brand-card-cont .brand-card {
-        padding: 3vw;
-        width: 39vw;
-        border-radius: 3.2vw;
-        box-shadow: .2vw .2vw .8vw hsla(0, 0%, 0%, 0.301);
-        margin: 2vw;
-    }
-
-    .brand-card-cont .brand-card .top {
-        height: 21vw;
-        border-radius: 3.2vw;
-    }
-
-    .brand-card-cont .brand-card .top img {
-        width: 31vw;
-    }
-
-    .brand-card-cont .brand-card .brand-discription {
-        font-size: 2.8vw;
-        margin-top: 2.3vw;
-        line-height: initial;
-    }
-
-    .brand-card-cont .brand-card .brand-card-btn {
-        padding: 1vw 6vw;
-        margin-top: 3.3vw;
-        font-size: 3vw;
-    }
-
-    .brand-card-cont .view-more-btn {
-        font-size: 4.1vw;
-        padding: 1.5vw 5vw;
-        border-radius: 1.4vw;
-    }
-
-    /* ======================Categories Page Responsive ============================= */
-
-    .category-nav {
-        height: 10vw;
-        margin-top: 28vw;
-        font-size: 3vw;
-    }
-
-    .category-nav h1 {
-        letter-spacing: .5vw;
-    }
-
-    .categories-cards-wraper .category-card {
-        width: 39vw;
-        padding: 2.4vw;
-        border-radius: 3vw;
-        margin: 2vw;
-    }
-
-    .categories-cards-wraper .category-card .top {
-        height: 23vw;
-        border-radius: 3vw;
-    }
-
-    .categories-cards-wraper .category-card .top img {
-        height: 27vw;
-    }
-
-    .categories-cards-wraper .category-card h4 {
-        font-size: 4.5vw;
-        margin-top: 2vw;
-        letter-spacing: .3vw;
-    }
-
-    /* ======================Brand Comparison Page Responsive ============================= */
-
-    #landing_sec .brand-comparison-banner-responsiv {
-        height: 30vw !important;
-    }
-
-    .catrgory-name h1 {
-        font-size: 3vw;
-        letter-spacing: .5vw;
-    }
-
-    .product-div-cont h2 {
-        font-size: 4vw;
-    }
-
-    .product-div-cont .product-card-cont .brand-logo img {
-        height: 4vw;
-    }
-
-    .product-card-cont .card-cont .product-card {
-        width: 38vw;
-        padding: 2vw 2vw 3vw 2vw;
-        border-radius: 5.5vw;
-        margin: 2vw;
-
-    }
-
-    .product-card-cont .card-cont .product-card .product-img {
-        height: 18vw;
-    }
-
-    .product-card-cont .card-cont .product-card .product-img img {
-        height: 18vw;
-    }
-
-    .card-cont .product-card .product-name {
-        font-size: 2.5vw;
-    }
-
-    .card-cont .product-card .amazon-btn {
-        padding: .5vw 6vw;
-        margin-top: 3vw;
-    }
-
-    .card-cont .product-card .amazon-btn img {
-        height: 3vw;
-        margin-top: 1vw;
-    }
-
-    .compare-brands h2 {
-        font-size: 4vw;
-    }
-
-    .compare-brands p {
-        font-size: 3.2vw;
-        line-height: 5vw;
-    }
-
-    .brand-details-cards .brand-card {
-        padding: 7vw;
-        margin-top: 6vw;
-        border-radius: 5vw;
-    }
-
-    .brand-details-cards .brand-card h2 {
-        font-size: 3.4vw;
-    }
-
-    .brand-details-cards .brand-card .brand-logo {
-        height: 9vw;
-        margin-top: 5vw;
-    }
-
-    .brand-details-cards .brand-card p {
-        font-size: 3vw;
-        line-height: 5.5vw;
-    }
-
-    .similar-brands-head h2 {
-        font-size: 4vw;
-        width: 70%;
-    }
-
-    .similar-brands-head .view-more-btn {
-        margin-left: initial;
-        font-size: 3vw;
-        padding: 1.5vw 3vw;
-        border-radius: 1.3vw;
-        transform: initial;
-    }
 }
